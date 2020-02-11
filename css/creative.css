@@ -6805,7 +6805,17 @@ a.close.disabled {
 
 .bg-oferta1 {
 
-  background: url("../img/fondo3.png") no-repeat center fixed;
+  background: url("../img/banners/Mesadetrabajo8.png") no-repeat center fixed;
+  background-position: initial;
+  background-attachment: scroll;
+  background-size: contain;
+
+
+}
+
+.bg-oferta2 {
+
+  background: url("../img/banners/Mesadetrabajo9.png") no-repeat center fixed;
   background-position: initial;
   background-attachment: scroll;
   background-size: contain;
