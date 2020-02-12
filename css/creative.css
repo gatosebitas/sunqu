@@ -587,7 +587,7 @@ pre code {
   width: 100%;
   /* padding:5px; */
   padding-top: 0.5rem;
-  padding-right: 5px;
+  padding-right: 0px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -628,13 +628,14 @@ pre code {
 
 .container2 {
   width: 100%;
-  
+
 }
 
-.ayuda{
+.ayuda {
   padding-left: 0em;
 }
- @media (min-width: 576px) {
+
+@media (min-width: 576px) {
   .ayuda {
     padding-left: 6em;
   }
@@ -675,8 +676,7 @@ pre code {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
+  flex-wrap: wrap;  
   margin-left: -15px;
 }
 
@@ -4144,10 +4144,17 @@ input[type="button"].btn-block {
 .naranjas-izquierda {
   width: 6%;
   /* height: 35%; */
-  
+
   position: absolute;
   top: calc(12rem - 20px);
   /* left:-40px; */
+}
+
+@media (max-width: 992px) {
+  .naranjas-izquierda {
+    width: 9%;
+    top: calc(10rem - 20px);
+  }
 }
 
 .naranjas-derecha {
@@ -4157,6 +4164,14 @@ input[type="button"].btn-block {
   position: absolute;
   top: calc(12rem - 20px);
   /* left:-40px; */
+}
+
+@media (max-width: 992px) {
+  .naranjas-derecha {
+    width: 9%;
+    right: 0%;
+    top: calc(10rem - 20px);
+  }
 }
 
 .custom-range {
@@ -4342,9 +4357,9 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: 20px!important;
-  font-family: Aristotelica!important;
-  
+  font-size: 20px !important;
+  font-family: Aristotelica !important;
+
 }
 
 .nav-link:hover,
@@ -4364,7 +4379,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
-  
+
 }
 
 .nav-tabs .nav-link {
@@ -6815,13 +6830,103 @@ a.close.disabled {
   background-size: cover;
 }
 
+@media(max-width: 792px) {
+  .bg-primary {
+    background-image: url("../img/fondo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  /* height: 80vh; */
+  }
+}
+
 .bg-oferta1 {
 
   background: url("../img/banners/Mesadetrabajo8.png") no-repeat center fixed;
   background-position: initial;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: cover;
+  height: 110vh;
 
+
+
+}
+
+@media (max-width: 1200px) {
+  .bg-oferta1 {
+    background: url("../img/banners/Mesadetrabajo8.png") no-repeat center fixed;
+    background-position: initial;
+    background-attachment: scroll;
+    background-size: cover;
+    /* height: 100vh; */
+  }
+
+  .text-azul {
+    font-size: 25px !important;
+  }
+
+}
+
+@media (max-width: 792px) {
+  .bg-oferta1 {
+    background: url("../img/banners/flyer-unido.png") no-repeat center fixed;
+    background-position: initial;
+    background-attachment: scroll;
+    background-size: contain;
+    height: 150vh;
+  }
+
+  .text-azul {
+    font-size: 18px;
+  }
+
+  .page-section {
+    padding: 2.5em 0;
+    padding-bottom: 20rem;
+  }
+
+  
+
+}
+
+@media (max-width: 900px) {
+  .bg-oferta1 {
+    background: url("../img/banners/flyer-unido.png") no-repeat center fixed;
+    background-position: initial;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .page-section {
+    padding: 6.5em 0;
+   padding-bottom: 1rem;
+}
+
+}
+
+@media (max-width: 500px) {
+  .bg-oferta1 {
+    background: url("../img/banners/flyer-unido.png") no-repeat center fixed;
+    background-position: initial;
+    background-attachment: scroll;
+    background-size: contain;
+    height: 100vh;
+  }
+  .text-plomo {
+    color: #4A4A49 !important;
+    font-size: 17px!important;
+    line-height: 19px!important;
+}
+
+  .page-section {
+    padding: 1.5em 0;
+    padding-bottom: 20rem;
+  }
+
+  .text-azul {
+    font-size: 13px;
+  }
 
 }
 
@@ -10476,6 +10581,7 @@ button.bg-dark:focus {
 
 .text-azul {
   color: #155688 !important;
+  font-family: aristotelica !important;
 }
 
 .text-plomo {
@@ -10838,6 +10944,45 @@ hr.light {
   padding-bottom: 24rem;
 }
 
+
+@media (max-width: 992px) {
+  .page-section2 {
+    padding: 5em 0;
+    padding-bottom: 24rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-section2 {
+    padding: 15em 0;
+    padding-bottom: 24rem;
+  }
+}
+
+.page-section22 {
+  padding: 15em 0;
+  padding-bottom: 24rem;
+}
+
+
+@media (max-width: 992px) {
+  .page-section22 {
+    padding: 5em 0;
+    padding-bottom: 24rem;
+  }
+  .mitext{
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-section22 {
+    max-height: 50vh;    
+    padding-bottom: 24rem;
+  }
+}
+
+
 .page-section3 {
   padding: 1em 0;
   padding-bottom: 2rem;
@@ -10850,7 +10995,7 @@ hr.light {
 }
 
 .productos {
-  max-width: 18em;
+  max-width: 10rem;
   padding-bottom: 2em;
 }
 
@@ -10945,7 +11090,7 @@ hr.light {
 
 header.masthead {
   width: 100%;
-  height: 80vh;
+   height: 100vh; 
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: url("../img/fondo00.png");
@@ -10959,7 +11104,7 @@ header.masthead h1 {
   font-size: 2.25rem;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 1200px) {
   header.masthead {
     width: 100%;
     height: 100vh;
@@ -10977,6 +11122,28 @@ header.masthead h1 {
     font-size: 3.5rem;
   }
 }
+
+@media (max-width: 768px) {
+  header.masthead {
+    width: 100%;
+    height: 50vh;
+    min-height: 20rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+    background-size: cover;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+
+
+}
+
 
 @media (min-width: 1200px) {
   header.masthead h1 {
@@ -11035,8 +11202,28 @@ header.masthead h1 {
   src: url("../fonts/Aristotelica-Display-Regular-trial.ttf");
 }
 
-.mitext {
-  font-family: ghandi;
+@media(max-width: 792px) {
+  .mitext {
+    font-family: ghandi;
+    padding-left: 3em;
+    padding-right: 3em;
+    text-align: justify;
+    font-size: 20px !important;
+    line-height : 25px;
+    
+  }
+}
+
+@media(max-width: 500px) {
+  .mitext {
+    font-family: ghandi;
+    padding-left: 4em;
+    padding-right: 3em;
+    text-align: justify;
+    font-size: 13px !important;
+    line-height: 15px;
+    ;
+  }
 }
 
 /* estilos del formulario empiezan aqui */
@@ -11049,11 +11236,30 @@ header.masthead h1 {
 
   float: right;
   margin-top: -12rem;
-  padding-right: 10rem;
+  padding-right: 8rem;
 
   /* float: right; */
   background-color: transparent !important;
 }
+
+
+@media (max-width: 992px) {
+  .container-formulario {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    float: right;
+    margin-top: -12rem;
+    padding-right: 2rem;
+  }
+}
+
+/* @media (min-width: 1200px) {
+  .container-formulario {
+    padding-right: 12rem;
+  }
+} */
 
 #contact input[type="text"],
 #contact input[type="email"],
