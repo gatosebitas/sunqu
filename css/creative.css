@@ -75,7 +75,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus {
@@ -628,9 +628,16 @@ pre code {
 
 .container2 {
   width: 100%;
+  
+}
 
-  /* margin-right: auto;
-  margin-left: auto; */
+.ayuda{
+  padding-left: 0em;
+}
+ @media (min-width: 576px) {
+  .ayuda {
+    padding-left: 6em;
+  }
 }
 
 /* @media (min-width: 576px) {
@@ -4146,7 +4153,7 @@ input[type="button"].btn-block {
 .naranjas-derecha {
   width: 6%;
   /* height: 35%; */
-  right: 0px;
+  right: 0%;
   position: absolute;
   top: calc(12rem - 20px);
   /* left:-40px; */
@@ -4335,6 +4342,9 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  font-size: 20px!important;
+  font-family: Aristotelica!important;
+  
 }
 
 .nav-link:hover,
@@ -4354,6 +4364,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  
 }
 
 .nav-tabs .nav-link {
@@ -4816,6 +4827,7 @@ input[type="button"].btn-block {
 .card {
   position: relative;
   display: flex;
+  /* height: 96vh; */
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
@@ -6846,6 +6858,7 @@ a.close.disabled {
   background-position: center;
   background-attachment: scroll;
   background-size: cover;
+  margin-top: 0.5rem;
 
 }
 
@@ -10467,6 +10480,7 @@ button.bg-dark:focus {
 
 .text-plomo {
   color: #4A4A49 !important;
+  font-size: 20px;
 }
 
 @media (min-width: 576px) {
@@ -10815,19 +10829,18 @@ hr.light {
 }
 
 .page-section {
-  padding: 8em 0;
-  padding-bottom: 18rem;
+  padding: 6.5em 0;
+  padding-bottom: 20rem;
 }
 
 .page-section2 {
-  padding: 22rem 0;
+  padding: 15em 0;
+  padding-bottom: 24rem;
 }
 
 .page-section3 {
-  padding-top: 22rem 0;
-  padding-right: 0px;
-  padding-bottom: 18rem;
-  padding-left: 0px;
+  padding: 1em 0;
+  padding-bottom: 2rem;
 }
 
 .bolitas {
@@ -10842,8 +10855,8 @@ hr.light {
 }
 
 .ventajas {
-  max-height: 8em;
-  padding-bottom: 2em;
+  max-height: 6em;
+  padding-bottom: 1em;
 }
 
 
@@ -10906,7 +10919,10 @@ hr.light {
   #mainNav.navbar-scrolled {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
+
   }
+
+
 
   #mainNav.navbar-scrolled .navbar-brand {
     color: #212529;
@@ -10925,19 +10941,11 @@ hr.light {
   }
 }
 
-header.masthead {
-  width: 100%;
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 72px);
-  background-image: url("../img/fondo00.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
+
 
 header.masthead {
   width: 100%;
+  height: 80vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   background-image: url("../img/fondo00.png");
@@ -11020,6 +11028,11 @@ header.masthead h1 {
 @font-face {
   font-family: ghandi;
   src: url("../fonts/GandhiSans-Regular.otf");
+}
+
+@font-face {
+  font-family: aristotelica;
+  src: url("../fonts/Aristotelica-Display-Regular-trial.ttf");
 }
 
 .mitext {

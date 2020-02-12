@@ -1,0 +1,31 @@
+<style>
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="contenedorMenu">
+  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" width="184" height="60" />
+  <ul id="menu">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</div>
+<p style="height:1000px;"></p>
+<script>// esta parte, permite que se ejecute el codigo cuando se halla cargado la pagina
+    $(function() {
+      // esta parte es la que controla cuando se mueve el scroll y ejecuta una función
+      $(document).scroll(function() {
+        // aca se pregunta si el scroll se movio de pa bajo.
+        if ($(this).scrollTop() > 1) {
+            
+          // esta parte cambia el atributo "src" de la etiqueta "img" 
+          $('#logo').attr('src', 'http://wowslider.com/images/data/images/slide1.png')
+        }
+        if ($(this).scrollTop() < 1) {
+          $('#logo').attr('src', 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');
+        }
+      });
+    });</script>
