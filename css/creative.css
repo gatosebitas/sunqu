@@ -6843,11 +6843,11 @@ a.close.disabled {
 
 .bg-oferta1 {
 
-  background: url("../img/banners/Mesadetrabajo8.png") no-repeat center fixed;
+  background: url("../img/banners/Recurso2.png") no-repeat center fixed;
   background-position: initial;
   background-attachment: scroll;
   background-size: cover;
-  height: 110vh;
+  height: 220vh;
 
 
 
@@ -11255,7 +11255,7 @@ header.masthead h1 {
     position: relative;
 
     float: right;
-    margin-top: -12rem;
+    
     padding-right: 2rem;
   }
 }
