@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realiza tu pedido</title>
+    <!--CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <style>
+        
+        .modal-dialog {
+            align-items: center;
+        }
+
+        .modal-content {
+            position: absolute;
+
+            height: 90vh;
+            width: 90vw;
+        }
+
+        .modal-title {
+            text-align: center !important;
+            color: #155688 !important;
+            font-family: aristotelica;
+            /* font-weight: bold; */
+        }
+
+        body {
+            font-family: aristotelica;
+            margin: 0px !important;
+        }
+
+        @media(max-width: 900px) {
+            body {
+                margin: 0px !important;
+            }
+
+            .miformulario {
+                padding: 1rem !important;
+            }
+            .ocultar{
+                display: none;
+            }
+        }
+
+        .miformulario {
+            background: url("./img/prueba.jpg") no-repeat center fixed;
+            background-position: center;
+            background-attachment: scroll;
+            background-size: cover;
+
+            padding: 4rem;
+        }
+
+
+        .vl {
+            border-left: 1px solid;
+            height:100%;
+            color: #155688 !important;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        .myoption{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @font-face {
+            font-family: aristotelica;
+            src: url("./fonts/GandhiSans-Regular.otf");
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="miformulario">
+
+
+        <div class="container2" style="padding: 1rem; ">
+          <div class="card border-0 shadow " style="background-color: rgba(255, 255, 255, 0.8);">
+            <div class="card-body ">
+                <div class="row">
+
+                    <div class="col-md-6 order-md-1">
+        
+        
+        
+                        <h4 class="modal-title">
+                            ORDEN DE COMPRA
+                        </h4>
+        
+                        <!-- Aqui empieza el formulario para nuevo pedido -->
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" style="width:100%" placeholder="Nombre"
+                                        required>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Debe llenar este campo
+                                  </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" style="width:100%"
+                                        placeholder="Teléfono" required>
+                                </div>
+        
+                                <div class="row">
+                                    <div class="col-md-8 mb-3">
+        
+                                        <select class="custom-select d-block w-100" id="tipo" name="tipo" required >
+                                            <option value="">Seleccione producto...</option>
+                                            <option class="myoption">Bidón de 20 litros</option>
+                                            <option class="myoption">Caja de 20 litros</option>
+                                            <option class="myoption">Bidón de 10 litros</option>
+        
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Por favor seleccione un tipo válido.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="title" style="width:100%"
+                                                placeholder="Cantidad" required>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" style="width:100%" placeholder="Dirección"
+                                        row="5" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" class="form-control" style="width:100%" placeholder="Referencia"
+                                        row="5"></textarea>
+                                </div>
+        
+        
+                                <input type="checkbox" id="isfactura" name="isfactura" style="text-align: right!important;"
+                                    onclick="disableSending()">
+                                <label for="vehicle1" style="text-align: right!important;">Necesito factura</label><br>
+                            </form>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-md-1 order-md-1 ocultar">
+                        <div class="vl"></div>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        
+        
+        
+                        <h4 class="modal-title">
+                            DATOS DE FACTURACIÓN
+                        </h4>
+        
+                        <!-- Aqui empieza el formulario para nuevo pedido -->
+                        <div class="modal-body">
+                            <form action="" name="form1">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="razonsocial" style="width:100%"
+                                        placeholder="Razón social">
+                                </div>
+        
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="ruc" style="width:100%" placeholder="RUC">
+                                </div>
+        
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="direccionfiscal" style="width:100%"
+                                        placeholder="Dirección fiscal">
+                                </div>
+        
+        
+                                <h4 class="modal-title">
+                                    ORDEN DE COMPRA
+                                </h4>
+        
+        
+                                <div class="row">
+                                    <div class="col-md-6 mb-6" style="text-align: center!important;">
+                                        <div>
+                                            <input type="radio" id="huey" name="mediopago" value="contado" checked>
+                                            <label for="huey">Contado</label>
+                                        </div>
+        
+        
+                                    </div>
+        
+                                    <div class="col-md-6 mb-6" style="text-align: center!important;">
+                                        <div>
+                                            <input type="radio" id="dewey" name="mediopago" value="credito">
+                                            <label for="dewey">Crédito</label>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <!-- <div class="form-group">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div> -->
+                                </br>
+                                </br>
+        
+                                <button type="submit" class="btn btn-primary btn-lg"
+                                    onclick="pedir();" style="margin-left:2rem;width: 90%; background: #155688 !important;">CONFIRMAR MI
+                                    PEDIDO</button>
+                            </form>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script>
+        
+        document.form1.razonsocial.disabled = true;
+        document.form1.ruc.disabled = true;
+        document.form1.direccionfiscal.disabled = true;
+
+        function disableSending() {
+            if (document.form1.razonsocial.disabled) {
+                document.form1.razonsocial.disabled = false;
+                document.form1.ruc.disabled = false;
+                document.form1.direccionfiscal.disabled = false;
+            }
+
+            else {
+                document.form1.razonsocial.disabled = true;
+                document.form1.ruc.disabled = true;
+                document.form1.direccionfiscal.disabled = true;
+            }
+
+        };
+        function pedir(){
+            alert("Gracias por su compra, en la brevedad un repartidor se estara acercando a su domicilio");
+            window.close()
+        }
+    </script>
+
+</body>
+
+</html>

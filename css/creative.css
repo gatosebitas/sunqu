@@ -11359,3 +11359,38 @@ fieldset {
   outline: 0;
   border: 1px solid #999;
 }
+
+
+/* Estilos del boton flotante */
+
+.float {
+  position: fixed;
+  right: 0%;
+  top: calc(14rem);
+  width: 3rem;
+  height: 10rem;
+  background-color: #155688 !important;
+  color: #ffffff;
+  text-align: left;
+  padding-top: 1rem;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 3;
+}
+
+.texto-vertical-1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: aristotelicadisplay;
+
+}
+
+.my-float {
+  margin-top: 20px;
+}
+
+
+
+@font-face {
+        font-family: aristotelicadisplay;
+        src: url("../fonts/Aristotelica-Display-Light-trial.ttf");
+    }

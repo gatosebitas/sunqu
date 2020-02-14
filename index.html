@@ -23,10 +23,18 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.css" rel="stylesheet">
+  <style>
+    #flotante{display:none;}
+    </style>
 
 </head>
 
 <body id="page-top">
+
+
+  <a href="./pedidos.html" target="_blank" class="float" id="flotante">
+    <p class="texto-vertical-1">HAZ TU PEDIDO</p>
+  </a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2-5" id="mainNav">
@@ -313,6 +321,12 @@
         }
         if ($(this).scrollTop() < 1) {
           $('#logo').attr('src', './img/logos_iconos/Recurso2.png');
+        }
+        if ($(this).scrollTop() < 11) {
+          document.getElementById('flotante').style.display = 'none';
+        }
+        if ($(this).scrollTop() >= 11) {
+          document.getElementById('flotante').style.display = 'block';
         }
       });
     });</script>

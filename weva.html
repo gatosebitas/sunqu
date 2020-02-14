@@ -1,31 +1,190 @@
-<style>
+<!DOCTYPE html>
+<html lang="en">
 
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--CSS-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<div id="contenedorMenu">
-  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" width="184" height="60" />
-  <ul id="menu">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </ul>
-</div>
-<p style="height:1000px;"></p>
-<script>// esta parte, permite que se ejecute el codigo cuando se halla cargado la pagina
-    $(function() {
-      // esta parte es la que controla cuando se mueve el scroll y ejecuta una función
-      $(document).scroll(function() {
-        // aca se pregunta si el scroll se movio de pa bajo.
-        if ($(this).scrollTop() > 1) {
-            
-          // esta parte cambia el atributo "src" de la etiqueta "img" 
-          $('#logo').attr('src', 'http://wowslider.com/images/data/images/slide1.png')
+  <style>
+    .float {
+      position: fixed;
+      right: 0%;
+      top: calc(14rem);
+      width: 3rem;
+      height: 10rem;
+      background-color: #155688 !important;
+      color: #ffffff;
+      text-align: left;
+      padding-top: 1rem;
+      box-shadow: 2px 2px 3px #999;
+    }
+
+    .texto-vertical-1 {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-family: aristotelicadisplay;
+
+    }
+
+    .my-float {
+      margin-top: 20px;
+    }
+
+    .modal-dialog {
+      align-items: center;
+    }
+
+    .modal-content {
+      position: absolute;
+
+      height: 90vh;
+      width: 90vw;
+    }
+
+    @font-face {
+            font-family: aristotelicadisplay;
+            src: url("./fonts/Aristotelica-Display-Light-trial.ttf");
         }
-        if ($(this).scrollTop() < 1) {
-          $('#logo').attr('src', 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png');
-        }
+  </style>
+</head>
+
+<body>
+
+  <a href="./pedidos.html" target="_blank" class="float">
+    <p class="texto-vertical-1">HAZ TU PEDIDO</p>
+  </a>
+
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+  <p>sd</p>
+
+
+
+  <div id="newmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-md">
+
+      <div class="modal-content">
+
+        <div class="row">
+
+          <div class="col-md-6 order-md-1">
+
+            <div class="modal-header">
+
+              <h4 class="modal-title" style="color:#000000">
+                Orden de compra
+              </h4>
+            </div>
+            <!-- Aqui empieza el formulario para nuevo pedido -->
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="title" style="width:100%" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                  <textarea type="text" class="form-control" style="width:100%" placeholder="Teléfono" row="5"
+                    required></textarea>
+                </div>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Producto:
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Bidón de 20 litros</a>
+                    <a class="dropdown-item" href="#">Caja de 20 litros</a>
+                    <a class="dropdown-item" href="#">Bidón de 10 litros</a>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea type="te" class="form-control" style="width:100%" placeholder="Cantidad:" row="5"
+                    required></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea type="text" class="form-control" style="width:100%" placeholder="Dirección" row="5"
+                    required></textarea>
+                </div>
+                <div class="form-group">
+                  <textarea type="text" class="form-control" style="width:100%" placeholder="Referencia" row="5"
+                    required></textarea>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 order-md-1">
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $(".float").click(function () {
+        $("#newmodal").modal('show');
       });
-    });</script>
+    });
+  </script>
+
+</body>
+
+</html>
