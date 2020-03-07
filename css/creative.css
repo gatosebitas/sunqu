@@ -4138,7 +4138,7 @@ input[type="button"].btn-block {
 }
 
 .logo-organica {
-  width: 50%;
+  width: 70%;
 }
 
 .naranjas-izquierda {
@@ -6843,11 +6843,11 @@ a.close.disabled {
 
 .bg-oferta1 {
 
-  background: url("../img/banners/Recurso2.png") no-repeat center fixed;
+  background: url("../img/banners/flyer-horizontal-unido.png") no-repeat center fixed;
   background-position: initial;
   background-attachment: scroll;
-  background-size: cover;
-  height: 220vh;
+  background-size: contain;
+  height: 240vh;
 
 
 
@@ -6855,11 +6855,12 @@ a.close.disabled {
 
 @media (max-width: 1200px) {
   .bg-oferta1 {
-    background: url("../img/banners/Mesadetrabajo8.png") no-repeat center fixed;
+    background: url("../img/banners/flyer-unido-desktop.png") no-repeat center fixed;
     background-position: initial;
     background-attachment: scroll;
-    background-size: cover;
-    /* height: 100vh; */
+    background-size: contain;
+    height: 410vh;
+    
   }
 
   .text-azul {
@@ -6870,7 +6871,7 @@ a.close.disabled {
 
 @media (max-width: 792px) {
   .bg-oferta1 {
-    background: url("../img/banners/flyer-unido.png") no-repeat center fixed;
+    background: url("../img/banners/flyer-horizontal-unido.png") no-repeat center fixed;
     background-position: initial;
     background-attachment: scroll;
     background-size: contain;
@@ -6897,6 +6898,19 @@ a.close.disabled {
     padding-bottom: 20rem;
   }
 }
+
+.page-section-productos {
+  padding: 4.5em 0;
+  padding-bottom: 20rem;
+}
+
+@media(max-width: 1200px){
+  .page-section-productos {
+    padding: 4.5em 0;
+    padding-bottom: 20rem;
+  }
+}
+
 @media (max-width: 900px) {
   .bg-oferta1 {
     background: url("../img/banners/flyer-unido.png") no-repeat center fixed;
@@ -11000,7 +11014,7 @@ hr.light {
 }
 
 .productos {
-  max-width: 12rem;
+  max-height: 14rem;
   padding-bottom: 2.5em;
 }
 
@@ -11042,7 +11056,7 @@ hr.light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: #000000;
+    /* background-color: #000000; */
   }
 
   #mainNav .navbar-brand {
@@ -11098,7 +11112,7 @@ header.masthead {
    height: 100vh; 
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: url("../img/fondo00.png");
+  /* background-image: url("../img/fondo00.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
