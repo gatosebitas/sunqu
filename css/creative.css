@@ -10,7 +10,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -584,9 +584,8 @@ pre code {
 }
 
 .container {
-  width: 100%;
-  /* padding:5px; */
-  padding-top: 0.5rem;
+  width: 100%; 
+ 
   padding-right: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -599,21 +598,21 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    padding-top: 0.5rem;
+    
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    padding-top: 0.5rem;
+    
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-
+    margin-right: 12rem!important;
     max-width: 960px;
   }
 }
@@ -625,11 +624,39 @@ pre code {
   }
 }
 
-
-.container2 {
-  width: 100%;
-
+.container2{
+  width: 100%; 
+  padding-right: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@media (min-width: 576px) {
+  .container2 {    
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container2 {    
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container2 {  
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container2 {
+
+    max-width: 1140px;
+  }
+}
+
+
 
 .ayuda {
   padding-left: 0em;
@@ -11373,8 +11400,24 @@ fieldset {
   outline: 0;
   border: 1px solid #999;
 }
+.btn-rojo{
+  /* width: 3rem;
+  height: 10rem;   */
+  color: #ffffff;
+  background-color: #c82333!important;
+  font-size: 1rem;
+  
+ 
 
-
+}
+@media (min-width: 900px) {
+  .btn-rojo {
+    position: absolute!important;
+    right: 2rem;
+    background-color: #23c8ba!important;
+    margin-left: 4rem!important;
+  }
+}
 /* Estilos del boton flotante */
 
 .float {
@@ -11383,12 +11426,35 @@ fieldset {
   top: calc(14rem);
   width: 3rem;
   height: 10rem;
-  background-color: #155688 !important;
   color: #ffffff;
+  
+  background-color: #155688 !important;
   text-align: left;
   padding-top: 1rem;
   box-shadow: 2px 2px 3px #999;
   z-index: 3;
+}
+.float-pedido {
+  position: fixed;
+  right: 0%;
+  top: 3rem;
+  width: 12rem;
+  /* height: 10rem; */
+  background-color: transparent;
+  color: #c82333!important;
+  text-align: left;
+  
+  z-index: 3;
+}
+@media(min-width:800px){
+  .float-pedido{
+    left:86%;
+  }
+}
+@media(max-width:400px){
+  .float-pedido{
+    left:65%;
+  }
 }
 
 .texto-vertical-1 {
@@ -11408,3 +11474,40 @@ fieldset {
         font-family: aristotelicadisplay;
         src: url("../fonts/Aristotelica-Display-Light-trial.ttf");
     }
+
+
+/* popup */
+.overlay2 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay2:target {
+  visibility: visible;
+  opacity: 1;
+}
+#popupBody{
+  width: 46%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #CCC;
+  background: #FFF;
+  position: relative;    
+  margin: 20% auto;    
+}
+#cerrar{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #F00;
+}
