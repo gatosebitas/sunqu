@@ -10,7 +10,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- :root {
+:root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -584,8 +584,8 @@ pre code {
 }
 
 .container {
-  width: 100%; 
- 
+  width: 100%;
+
   padding-right: 0px;
   margin-right: auto;
   margin-left: auto;
@@ -598,21 +598,21 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    
+
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    
+
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    margin-right: 12rem!important;
+    margin-right: 12rem !important;
     max-width: 960px;
   }
 }
@@ -624,27 +624,27 @@ pre code {
   }
 }
 
-.container2{
-  width: 100%; 
+.container2 {
+  width: 100%;
   padding-right: 0px;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 576px) {
-  .container2 {    
+  .container2 {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container2 {    
+  .container2 {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container2 {  
+  .container2 {
     max-width: 960px;
   }
 }
@@ -703,7 +703,7 @@ pre code {
 
 .row {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   margin-left: -15px;
 }
 
@@ -6151,6 +6151,15 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0;
+  
+}
+
+
+@media(min-width:900px){
+  .modal-content{
+    width: 150%;
+    right: 8rem;
+  }
 }
 
 .modal-backdrop {
@@ -6860,11 +6869,11 @@ a.close.disabled {
 @media(max-width: 792px) {
   .bg-primary {
     background-image: url("../img/fondo2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  /* height: 80vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    /* height: 80vh; */
   }
 }
 
@@ -6887,7 +6896,7 @@ a.close.disabled {
     background-attachment: scroll;
     background-size: contain;
     height: 410vh;
-    
+
   }
 
   .text-azul {
@@ -6910,7 +6919,7 @@ a.close.disabled {
   }
 
 
-  
+
 
 }
 
@@ -6919,22 +6928,22 @@ a.close.disabled {
   padding-bottom: 20rem;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1200px) {
   .page-section {
     padding: 6.5em 0;
-    padding-bottom: 20rem;
+    padding-bottom: 1rem;
   }
 }
 
 .page-section-productos {
   padding: 4.5em 0;
-  padding-bottom: 20rem;
+  padding-bottom: 1rem;
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1200px) {
   .page-section-productos {
     padding: 4.5em 0;
-    padding-bottom: 20rem;
+    padding-bottom: 18rem;
   }
 }
 
@@ -6948,9 +6957,15 @@ a.close.disabled {
 
   .page-section {
     padding: 6.5em 0;
-   padding-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
 }
 
+.text-naranja{
+  color: #f4623a !important;
+  font-size: 1rem !important;
+  
 }
 
 @media (max-width: 500px) {
@@ -6961,13 +6976,16 @@ a.close.disabled {
     background-size: contain;
     height: 100vh;
   }
+
   .text-plomo {
     color: #4A4A49 !important;
-    font-size: 17px!important;
-    line-height: 19px!important;
-}
+    font-size: 17px !important;
+    line-height: 19px !important;
+  }
 
- 
+  
+
+
 
   .text-azul {
     font-size: 13px;
@@ -11016,14 +11034,15 @@ hr.light {
     padding: 5em 0;
     padding-bottom: 24rem;
   }
-  .mitext{
+
+  .mitext {
     font-size: 20px !important;
   }
 }
 
 @media (max-width: 700px) {
   .page-section22 {
-    max-height: 50vh;    
+    max-height: 50vh;
     padding-bottom: 24rem;
   }
 }
@@ -11136,7 +11155,7 @@ hr.light {
 
 header.masthead {
   width: 100%;
-   height: 100vh; 
+  height: 100vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
   /* background-image: url("../img/fondo00.png"); */
@@ -11255,8 +11274,8 @@ header.masthead h1 {
     padding-right: 3em;
     text-align: justify;
     font-size: 20px !important;
-    line-height : 25px;
-    
+    line-height: 25px;
+
   }
 }
 
@@ -11296,7 +11315,7 @@ header.masthead h1 {
     position: relative;
 
     float: right;
-    
+
     padding-right: 2rem;
   }
 }
@@ -11400,24 +11419,27 @@ fieldset {
   outline: 0;
   border: 1px solid #999;
 }
-.btn-rojo{
-  /* width: 3rem;
-  height: 10rem;   */
+
+.btn-rojo {
+
+  /* height: 4rem;   */
   color: #ffffff;
-  background-color: #c82333!important;
+  background-color: #c82333 !important;
   font-size: 1rem;
-  
- 
+
+
 
 }
+
 @media (min-width: 900px) {
   .btn-rojo {
-    position: absolute!important;
+    position: absolute !important;
     right: 2rem;
-    background-color: #23c8ba!important;
-    margin-left: 4rem!important;
+    background-color: #c82333 !important;
+    margin-left: 4rem !important;
   }
 }
+
 /* Estilos del boton flotante */
 
 .float {
@@ -11427,33 +11449,44 @@ fieldset {
   width: 3rem;
   height: 10rem;
   color: #ffffff;
-  
+
   background-color: #155688 !important;
   text-align: left;
   padding-top: 1rem;
   box-shadow: 2px 2px 3px #999;
   z-index: 3;
 }
+
+@media(max-width:600px) {
+  .auxilio {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
 .float-pedido {
   position: fixed;
   right: 0%;
-  top: 3rem;
+  top: 5rem;
   width: 12rem;
   /* height: 10rem; */
   background-color: transparent;
-  color: #c82333!important;
+  color: #c82333 !important;
   text-align: left;
-  
+  right: -2rem;
   z-index: 3;
+  line-height: 1;
 }
-@media(min-width:800px){
-  .float-pedido{
-    left:86%;
+
+@media(min-width:800px) {
+  .float-pedido {
+    right: -2rem;
   }
 }
-@media(max-width:400px){
-  .float-pedido{
-    left:65%;
+
+@media(max-width:500px) {
+  .float-pedido {
+    right: -2rem;
   }
 }
 
@@ -11471,9 +11504,9 @@ fieldset {
 
 
 @font-face {
-        font-family: aristotelicadisplay;
-        src: url("../fonts/Aristotelica-Display-Light-trial.ttf");
-    }
+  font-family: aristotelicadisplay;
+  src: url("../fonts/Aristotelica-Display-Light-trial.ttf");
+}
 
 
 /* popup */
@@ -11488,20 +11521,23 @@ fieldset {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay2:target {
   visibility: visible;
   opacity: 1;
 }
-#popupBody{
+
+#popupBody {
   width: 46%;
   padding: 2%;
   border-radius: 15px;
   box-shadow: 0 0 5px #CCC;
   background: #FFF;
-  position: relative;    
-  margin: 20% auto;    
+  position: relative;
+  margin: 20% auto;
 }
-#cerrar{
+
+#cerrar {
   position: absolute;
   top: 20px;
   right: 30px;
@@ -11510,4 +11546,19 @@ fieldset {
   font-weight: bold;
   text-decoration: none;
   color: #F00;
+}
+
+.vl2 {
+  border-left: 1px solid;
+  height:50%;
+  color: #155688 !important;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+@media(max-width: 900px) {
+ 
+  .ocultar{
+      display: none;
+  }
 }
